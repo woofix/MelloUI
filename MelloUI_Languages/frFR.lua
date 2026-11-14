@@ -826,6 +826,14 @@ Lang:Add("frFR", {
 	["Reminds you when an item drops below this share of its amount."] = "Vous rappelle quand un objet tombe sous cette part de sa quantité.",
 	["Shopping List At The Shop"] = "Liste de courses chez le marchand",
 	["At a merchant, a shopping list of what you are low on. Nothing is bought until you click Buy."] = "Chez un marchand, une liste de ce qui vous manque. Rien n'est acheté avant un clic sur Acheter.",
+	["Fill All Ammo Bags"] = "Remplir les sacs à munitions",
+	["Buys arrows and bullets until your quivers and ammo pouches are full. This overrides the set amounts of the ammunition on your list."] = "Achète des flèches et des balles jusqu’à ce que vos carquois et vos gibernes soient pleins. Cette option remplace les quantités définies pour les munitions de votre liste.",
+	["in bags %d"] = "Dans les sacs : %d",
+	["in bags %d, no quiver"] = "Dans les sacs : %d, aucun carquois équipé",
+	["in bags %d, no ammo pouch"] = "Dans les sacs : %d, aucune giberne équipée",
+	["quiver: %d of %d"] = "Carquois : %d sur %d",
+	["ammo pouch: %d of %d"] = "Giberne : %d sur %d",
+	["no quiver or ammo pouch equipped"] = "Aucun carquois ni giberne équipé",
 	["Restock List"] = "Liste de réapprovisionnement",
 	["What to keep in your bags, and how many. Each character has its own list. /restock opens it too."] = "Ce qu'il faut garder dans vos sacs, et en quelle quantité. Chaque personnage a sa liste. /restock l'ouvre aussi.",
 	["+%d (have %d)"] = "+%d (en stock : %d)", -- draft
@@ -900,6 +908,12 @@ Lang:Add("frFR", {
 	["The same button on the loot window. It only throws something away for loot worth more."] = "Le même bouton dans la fenêtre de butin. Il ne jette un objet que si le butin vaut plus que l’objet à jeter.",
 	["Sell Cheapest Junk"] = "Vendre la camelote la moins chère", -- draft
 	["Discard Cheapest Junk"] = "Jeter l’objet indésirable le moins cher",
+	["Trade Goods Too"] = "Jeter aussi les marchandises",
+	["Cheap crafting materials and other trade goods, such as light leather or boar meat, can be thrown away too, the cheapest first. Never anything your Restock list keeps or what you keep with a right-click on the Discard button."] = "Les composants d’artisanat bon marché et autres marchandises, comme le cuir léger ou la viande de sanglier, peuvent aussi être jetés, en commençant par les moins chers. Ne jette jamais les objets conservés dans votre liste de réapprovisionnement ni ceux que vous protégez d’un clic droit sur le bouton Jeter.",
+	["Its auction prices in Discard: an item is worth its auction price when that is more than the vendor's, so the cheapest goes first by that worth."] = "Dans Jeter, un objet est évalué selon son prix à l’hôtel des ventes lorsque celui-ci dépasse son prix chez le marchand ; les objets les moins chers sont alors jetés en premier selon cette valeur.",
+	["At a vendor, Discard's Sell skips what sells for clearly more at the auction house."] = "Chez un marchand, l’action Vendre de Jeter ignore les objets dont le prix à l’hôtel des ventes est nettement supérieur.",
+	["Its auction prices in Discard"] = "Ses prix à l’hôtel des ventes dans Jeter",
+	["its prices"] = "ses prix",
 	["Nothing to throw away."] = "Rien à jeter.", -- draft
 	["Only when the loot is worth more."] = "Ne se déclenche que si le butin vaut plus que l’objet à jeter.",
 	["Never Throw Away Items Worth"] = "Toujours conserver les objets valant au moins",
@@ -2565,7 +2579,9 @@ Lang:Add("frFR", {
 	["None of the addons MelloUI works with is installed. The Compatibility tab lists them, with their links."] = "Aucun des addons avec lesquels MelloUI fonctionne n'est installé. L'onglet Compatibilité les liste avec leurs liens.", -- draft
 	["More addons MelloUI works with, with their links: the Compatibility tab."] = "D'autres addons avec lesquels MelloUI fonctionne, avec leurs liens : l'onglet Compatibilité.", -- draft
 	["Addons MelloUI works with"] = "Addons avec lesquels MelloUI fonctionne", -- draft
-	["Addon"] = "Addon", -- draft
+	["Addon"] = "Addon", -- draft	["Its spell recommendations highlight MelloUI's action buttons, including the controller's display buttons."] = "Ses recommandations de sorts mettent en évidence les boutons d’action de MelloUI, y compris ceux de l’affichage sur manette.",
+	["Spell recommendations on MelloUI's action bars"] = "Recommandations de sorts sur les barres d’action de MelloUI",
+
 	["Link (click it, then Ctrl+C)"] = "Lien (cliquez dessus, puis Ctrl+C)", -- draft
 	["Installed"] = "Installé", -- draft
 	["Missing one?"] = "Il en manque un ?", -- draft
