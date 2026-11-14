@@ -2691,9 +2691,7 @@ Lang:Add("frFR", {
 	["Quest List > Map"] = "Liste des quêtes > Carte", -- draft
 	["Nameplates > Quest Icon"] = "Barres d'info > Icône de quête", -- draft
 	["Map layers"] = "Calques de la carte",
-	["Quests"] = "QUÊTES",
-	["Travel"] = "VOYAGES",
-	["People and more"] = "PERSONNES ET AUTRES",
+	["People and more"] = "Personnes et autres",
 	["Quest givers"] = "Donneurs de quêtes",
 	["Your quests' objectives"] = "Objectifs des quêtes",
 	["Flight masters"] = "Maîtres de vol",
