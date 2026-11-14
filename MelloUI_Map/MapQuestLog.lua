@@ -1371,7 +1371,7 @@ local function LayersPage()
 	local y = 0
 	for g, name in ipairs(spec.groups) do
 		local h = HeadLook(CreateFrame("Frame", nil, pane))
-		h.label:SetText(W.Tr(name):upper())
+		h.label:SetText(W.Tr(name))
 		h:SetPoint("TOPLEFT", pane, "TOPLEFT", 0, -y)
 		h:SetWidth(width)
 		y = y + T.ZONE + 2
