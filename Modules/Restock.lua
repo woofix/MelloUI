@@ -2231,11 +2231,11 @@ local function HaveText(i)
 	if fill then
 		local own = type(key) == "number" and ItemCount(key) or (state.famHave[key] or 0)
 		if list.cap[fill] == 0 then
-			return "in bags " .. own .. (fill == "a" and ", no quiver" or ", no ammo pouch")
+			return fill == "a" and MelloUI.Lang.F("in bags %d, no quiver", own) or MelloUI.Lang.F("in bags %d, no ammo pouch", own)
 		end
-		return "in bags " .. own
+		return MelloUI.Lang.F("in bags %d", own)
 	end
-	return "in bags " .. (state.have[i] or 0)
+	return MelloUI.Lang.F("in bags %d", state.have[i] or 0)
 end
 
 -- the Fill All Ammo Bags row's line: how full the quivers and the ammo pouches carried are ("ammo pouch 354 of 1600")
@@ -2248,11 +2248,11 @@ function win.FillHint()
 		local letter = i == 1 and "a" or "b"
 		local slots = list.cap[letter]
 		if slots > 0 then
-			local part = (i == 1 and "quiver " or "ammo pouch ") .. list.held[letter] .. " of " .. slots * list.Stack(letter)
+			local part = MelloUI.Lang.F(i == 1 and "quiver: %d of %d" or "ammo pouch: %d of %d", list.held[letter], slots * list.Stack(letter))
 			text = text and (text .. ", " .. part) or part
 		end
 	end
-	return text or "no quiver or ammo pouch equipped"
+	return text or MelloUI.Lang.T("no quiver or ammo pouch equipped")
 end
 
 -- the diets the pet out eats (C_PetInfo.CanPetEatItem on the first item of each), into out; true when it eats any
@@ -2292,7 +2292,7 @@ local function RowHint(key)
 		if need and need > Level() then
 			text = "level " .. need
 		elseif n > 0 then
-			text = "in bags " .. n
+			text = MelloUI.Lang.F("in bags %d", n)
 		else
 			text = ""
 		end
