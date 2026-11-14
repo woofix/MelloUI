@@ -1371,7 +1371,7 @@ local function LayersPage()
 	local y = 0
 	for g, name in ipairs(spec.groups) do
 		local h = HeadLook(CreateFrame("Frame", nil, pane))
-		h.label:SetText(name:upper())
+		h.label:SetText(W.Tr(name):upper())
 		h:SetPoint("TOPLEFT", pane, "TOPLEFT", 0, -y)
 		h:SetWidth(width)
 		y = y + T.ZONE + 2
@@ -1386,7 +1386,7 @@ local function LayersPage()
 				r.icon:SetSize(T.LAYER_ICON, T.LAYER_ICON)
 				r.icon:SetPoint("LEFT", r, "LEFT", 4, 0)
 				Icons.Set(r.icon, s.icon, T.LAYER_ICON)
-				r.label = W.Text(r, "GameFontHighlight", s.label, "text")
+				r.label = W.Text(r, "GameFontHighlight", W.Tr(s.label), "text")
 				r.label:SetPoint("LEFT", r, "LEFT", 4 + T.LAYER_ICON + 10, 0)
 				r.switch = W.Switch(r, function()
 					return spec.on(key)
